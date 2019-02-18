@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">@string/cryptomizin</string>
+    <string name="cryptomizin">Cryptomizin</string>
+</resources>

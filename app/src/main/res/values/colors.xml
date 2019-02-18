@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/theme</color>
+    <color name="colorPrimaryDark">@color/theme_dark</color>
+    <color name="colorAccent">@color/theme_light</color>
+    <color name="white">#FFFF</color>
+    <color name="theme">#260026</color>
+    <color name="theme_dark">#170017</color>
+    <color name="theme_light">#470047</color>
+</resources>
