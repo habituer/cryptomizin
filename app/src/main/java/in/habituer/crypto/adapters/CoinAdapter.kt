@@ -9,7 +9,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import `in`.habituer.crypto.`interface`.ILoadMore
+import `in`.habituer.crypto.extension.formatTwoDigit
 import `in`.habituer.crypto.extension.getBarlow
+import `in`.habituer.crypto.extension.getNotoSans
 import `in`.habituer.crypto.models.Coins
 import `in`.habituer.crypto.utils.Utils
 import com.squareup.picasso.Picasso
@@ -68,7 +70,7 @@ class CoinAdapter(recyclerView: RecyclerView, internal var activity: Activity, v
         val typeFace = activity.getBarlow()
         item.coinSymbol.text = coinModel.symbol
         item.coinSymbol.typeface = typeFace
-        item.coinPrice.text = "$"+ coinModel.price_usd
+        item.coinPrice.text = "$"+ coinModel.price_usd!!.formatTwoDigit()
         item.coinPrice.typeface = typeFace
         item.coinTwentyHourChange.text = coinModel.percent_change_24h + "%"
         item.coinTwentyHourChange.typeface = typeFace
