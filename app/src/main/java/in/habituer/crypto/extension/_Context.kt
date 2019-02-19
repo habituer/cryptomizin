@@ -12,5 +12,5 @@ import android.support.v4.content.res.ResourcesCompat
 val Context.app: Application
     get() = applicationContext as Application
 
-fun Context.getBarlow() = ResourcesCompat.getFont(app, R.font.barlowblack)!!
+fun Context.getBarlow() = ResourcesCompat.getFont(app, R.font.barlowbold)!!
 fun Context.getNotoSans() = ResourcesCompat.getFont(app, R.font.notosansblack)!!

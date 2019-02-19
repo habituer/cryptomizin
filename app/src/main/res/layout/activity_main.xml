@@ -6,7 +6,6 @@
     android:id="@+id/swife_to_refresh"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/theme_dark"
     tools:context="in.habituer.crypto.MainActivity">
 
     <RelativeLayout
@@ -14,6 +13,8 @@
         android:layout_height="match_parent">
         <android.support.v7.widget.RecyclerView
             android:id="@+id/coin_recycler_view"
+            android:clickable="true"
+            android:focusable="true"
             android:layout_margin="8dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">

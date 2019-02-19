@@ -1,5 +1,6 @@
-package cloud.techstar.cryptokotlin
+package `in`.habituer.crypto
 
+import `in`.habituer.crypto.utils.Constants
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -12,6 +13,7 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        val x = String.format("${Constants.API}${Constants.ENDPOINT}&limit=10&start=0")
+        print(x)
     }
 }

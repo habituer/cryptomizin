@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:arc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CoinDetailViewActivity">
+
+
+    <TextView
+        android:id="@+id/coin_full_name_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="top"
+        android:paddingTop="10dp"
+        android:letterSpacing="0.1"
+        android:text="BITCOIN"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="9pt"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/coin_icon_detail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center|end"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/coin_symbol_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="top"
+                    android:paddingTop="7dp"
+                    android:letterSpacing="0.1"
+                    android:text="₹ "
+                    android:textColor="@color/theme_bright_light"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/price_inr_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:text="13,4565"
+                    android:textColor="@color/white"
+                    android:textSize="15pt" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/price_24hour_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="10.10"
+                android:textColor="@color/white"
+                android:textSize="5pt" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.github.florent37.arclayout.ArcLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        arc:arc_cropDirection="cropInside"
+        arc:arc_height="90dp"
+        arc:arc_padding="30dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@color/white" />
+
+    </com.github.florent37.arclayout.ArcLayout>
+
+</LinearLayout>
