@@ -14,10 +14,8 @@ import `in`.habituer.crypto.utils.ColorConstant.RED
 import `in`.habituer.crypto.extension.getBarlow
 import `in`.habituer.crypto.models.CryptoCoin
 import `in`.habituer.crypto.utils.ImageLoader.loadImage
-import `in`.habituer.crypto.utils.Logger.logv
-import `in`.januprasad.bdlibs.BigDecimalUtils.createCurrency
-import `in`.januprasad.bdlibs.toIndianRupee
-import `in`.januprasad.bdlibs.toIndianRupeeWithUnit
+import `in`.januprasad.currencyops.BigDecimalUtils
+import `in`.januprasad.currencyops.toIndianRupeeWithUnit
 import android.annotation.SuppressLint
 import com.balysv.materialripple.MaterialRippleLayout
 import kotlinx.android.synthetic.main.item_coin.view.*
@@ -81,7 +79,7 @@ class CoinAdapter(recyclerView: RecyclerView, internal var activity: Activity, v
         item.coinSymbol.typeface = typeFace
         coinModel.price_inr.let { it ->
             if (it != null) {
-                item.coinPrice.text = createCurrency(it).toIndianRupeeWithUnit()
+                item.coinPrice.text = BigDecimalUtils.createCurrency(it).toIndianRupeeWithUnit()
             }
         }
 

@@ -20,6 +20,7 @@ class SplashActivity : AppCompatActivity() {
         initTypeface()
         mHandler = Handler(Looper.getMainLooper())
 
+
         mHandler!!.postDelayed({
             startActivity(Intent(this@SplashActivity, MainActivity::class.java))
             finish()

@@ -52,5 +52,6 @@ dependencies {
     implementation "com.balysv:material-ripple:$m"
     implementation "org.jetbrains.anko:anko-commons:$a"
     implementation 'com.github.florent37:arclayout:1.0.3'
-    implementation project(':bdlibs')
+    implementation 'com.github.januprasad:toolkit:0.0.1'
+    implementation 'com.github.januprasad:currencyutil:0.0.2'
 }

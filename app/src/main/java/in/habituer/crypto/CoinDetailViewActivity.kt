@@ -6,9 +6,8 @@ import `in`.habituer.crypto.models.CryptoCoin
 import `in`.habituer.crypto.utils.ColorConstant.GREEN
 import `in`.habituer.crypto.utils.ColorConstant.RED
 import `in`.habituer.crypto.utils.ImageLoader
-import `in`.januprasad.bdlibs.BigDecimalUtils.createCurrency
-import `in`.januprasad.bdlibs.toIndianRupee
-import `in`.januprasad.bdlibs.toIndianRupeeWithUnit
+import `in`.januprasad.currencyops.*;
+import `in`.januprasad.currencyops.BigDecimalUtils.createCurrency
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_coin_detail_view.*

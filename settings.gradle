@@ -1,1 +1,1 @@
-include ':app', ':bdlibs'
+include ':app'
