@@ -36,7 +36,7 @@ ext {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     //noinspection GradleCompatible
     implementation "com.android.support:appcompat-v7:$sV"
@@ -52,4 +52,5 @@ dependencies {
     implementation "com.balysv:material-ripple:$m"
     implementation "org.jetbrains.anko:anko-commons:$a"
     implementation 'com.github.florent37:arclayout:1.0.3'
+    implementation project(':bdlibs')
 }

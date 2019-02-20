@@ -13,7 +13,7 @@
         android:id="@+id/coin_full_name_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="25dp"
         android:gravity="top"
         android:letterSpacing="0.1"
         android:paddingTop="10dp"
@@ -64,7 +64,7 @@
                     android:gravity="top"
                     android:letterSpacing="0.1"
                     android:paddingTop="7dp"
-                    android:text="₹ "
+                    android:text="₹"
                     android:textColor="@color/theme_bright_light"
                     android:textSize="8pt"
                     android:textStyle="bold" />
@@ -98,10 +98,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/ic_arc"
-        android:padding="40dp">
+        android:background="@drawable/ic_drawing"
+        android:paddingEnd="20dp"
+        android:paddingTop="40dp"
+        android:paddingStart="25dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -110,9 +112,9 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_weight="1"
+                android:layout_weight="@dimen/commn_wght"
                 android:textSize="6pt"
                 android:letterSpacing="0.05"
                 android:id="@+id/market_cap_text"
@@ -122,15 +124,14 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="$ 3434344"
                 android:id="@+id/market_cap_value"
                 android:layout_weight="1"
-                android:textSize="7pt"
+                android:textSize="@dimen/commn_font_detail_big"
                 android:letterSpacing="0.05"
                 android:textAllCaps="true"
-                android:gravity="center"
                 android:textColor="@color/white" />
 
         </LinearLayout>
@@ -143,9 +144,9 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_weight="1"
+                android:layout_weight="@dimen/commn_wght"
                 android:textSize="6pt"
                 android:letterSpacing="0.05"
                 android:id="@+id/volume_24_text"
@@ -155,14 +156,13 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="$ 134344"
                 android:id="@+id/volume_24_value"
                 android:layout_weight="1"
                 android:letterSpacing="0.05"
-                android:gravity="center"
-                android:textSize="7pt"
+                android:textSize="@dimen/commn_font_detail_big"
                 android:textAllCaps="true"
                 android:textColor="@color/white" />
 
@@ -176,9 +176,9 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_weight="1"
+                android:layout_weight="@dimen/commn_wght"
                 android:letterSpacing="0.05"
                 android:textSize="6pt"
                 android:id="@+id/supply_text"
@@ -188,15 +188,14 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="$ 63535"
                 android:letterSpacing="0.05"
                 android:id="@+id/supply_value"
                 android:layout_weight="1"
-                android:gravity="center"
                 android:textAllCaps="true"
-                android:textSize="7pt"
+                android:textSize="@dimen/commn_font_detail_big"
                 android:textColor="@color/white" />
 
         </LinearLayout>
@@ -204,13 +203,5 @@
 
 
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/theme">
-
-    </LinearLayout>
-
 
 </LinearLayout>

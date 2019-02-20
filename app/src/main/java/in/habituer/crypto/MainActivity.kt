@@ -7,7 +7,6 @@ import android.util.Log
 import android.widget.Toast
 import `in`.habituer.crypto.`interface`.ILoadMore
 import `in`.habituer.crypto.adapters.CoinAdapter
-import `in`.habituer.crypto.extension.Logger
 import `in`.habituer.crypto.models.CryptoCoin
 import `in`.habituer.crypto.utils.Constants.API
 import `in`.habituer.crypto.utils.Constants.ENDPOINT

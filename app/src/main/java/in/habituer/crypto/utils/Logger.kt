@@ -1,4 +1,4 @@
-package `in`.habituer.crypto.extension
+package `in`.habituer.crypto.utils
 
 import android.util.Log
 

@@ -8,12 +8,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import `in`.habituer.crypto.`interface`.ILoadMore
+import `in`.habituer.crypto.extension.appendStart
 import `in`.habituer.crypto.utils.ColorConstant.GREEN
 import `in`.habituer.crypto.utils.ColorConstant.RED
-import `in`.habituer.crypto.extension.formatINRUnit
 import `in`.habituer.crypto.extension.getBarlow
 import `in`.habituer.crypto.models.CryptoCoin
 import `in`.habituer.crypto.utils.ImageLoader.loadImage
+import `in`.habituer.crypto.utils.Logger.logv
+import `in`.januprasad.bdlibs.BigDecimalUtils.createCurrency
+import `in`.januprasad.bdlibs.toIndianRupee
+import `in`.januprasad.bdlibs.toIndianRupeeWithUnit
 import android.annotation.SuppressLint
 import com.balysv.materialripple.MaterialRippleLayout
 import kotlinx.android.synthetic.main.item_coin.view.*
@@ -77,12 +81,15 @@ class CoinAdapter(recyclerView: RecyclerView, internal var activity: Activity, v
         item.coinSymbol.typeface = typeFace
         coinModel.price_inr.let { it ->
             if (it != null) {
-                item.coinPrice.text = it.formatINRUnit()
+                item.coinPrice.text = createCurrency(it).toIndianRupeeWithUnit()
             }
         }
 
         item.coinPrice.typeface = typeFace
         item.coinTwentyHourChange.text = coinModel.percent_change_24h + "%"
+
+        item.coinTwentyHourChange.text = if (coinModel.percent_change_24h!!.contains("-")) coinModel.percent_change_24h else coinModel.percent_change_24h.appendStart("+")
+
         item.coinTwentyHourChange.typeface = typeFace
 
 
