@@ -1,6 +1,7 @@
 package `in`.habituer.crypto.models
 
 import android.os.Parcelable
+import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
 /**
@@ -9,8 +10,8 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class CryptoCoin(
-        val volume_inr_24hr: String?,
-        val volume_usd_24h_: String?,
+        @SerializedName("24h_volume_inr") val volume_inr_24hr: String?,
+        @SerializedName("24h_volume_usd") val volume_usd_24h: String?,
         val available_supply: String?,
         val id: String?,
         val last_updated: String?,

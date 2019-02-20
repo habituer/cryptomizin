@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">@string/cryptomizin</string>
     <string name="cryptomizin">Cryptomizin</string>
+    <string name="market_cap">market cap</string>
+    <string name="volume_24_hour">volume 24 hour</string>
+    <string name="supply">supply</string>
 </resources>
