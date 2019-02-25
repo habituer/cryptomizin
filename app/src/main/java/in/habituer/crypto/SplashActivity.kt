@@ -5,7 +5,9 @@ import android.os.Handler
 import android.os.Looper
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import `in`.habituer.crypto.extension.getBarlow
+import `in`.januprasad.fontmaniautil.FontManager
+import `in`.januprasad.fontmaniautil.FontType
+import `in`.januprasad.fontmaniautil.setFont
 import kotlinx.android.synthetic.main.activity_splash.*
 
 /**
@@ -19,8 +21,6 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
         initTypeface()
         mHandler = Handler(Looper.getMainLooper())
-
-
         mHandler!!.postDelayed({
             startActivity(Intent(this@SplashActivity, MainActivity::class.java))
             finish()
@@ -28,7 +28,6 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun initTypeface() {
-        val typeFace = getBarlow()
-        title_app.typeface = typeFace
+       setFont(FontManager.BARLOW.withType(FontType.BLACK), title_app)
     }
 }

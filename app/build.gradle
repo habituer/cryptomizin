@@ -58,4 +58,5 @@ dependencies {
     implementation 'com.github.florent37:arclayout:1.0.3'
     implementation 'com.github.januprasad:toolkit:0.0.1'
     implementation 'com.github.januprasad:currencyutil:0.0.2'
+    implementation 'com.github.januprasad:Fontmania:v1.1.1'
 }
