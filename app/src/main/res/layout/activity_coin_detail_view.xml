@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:arc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CoinDetailViewActivity">
+
+
+    <TextView
+        android:id="@+id/coin_full_name_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="top"
+        android:letterSpacing="0.1"
+        android:paddingTop="10dp"
+        android:text="BITCOIN"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="9pt"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/coin_rank_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:letterSpacing="0.1"
+        android:text="# 1"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="7.5pt"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="15dp">
+
+
+        <ImageView
+            android:id="@+id/coin_icon_detail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/coin_symbol_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="top"
+                    android:letterSpacing="0.1"
+                    android:paddingTop="7dp"
+                    android:text="₹"
+                    android:textColor="@color/theme_bright_light"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/price_inr_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="15pt" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/price_24hour_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="6pt" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/ic_drawing"
+        android:paddingEnd="20dp"
+        android:paddingTop="40dp"
+        android:paddingStart="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="@dimen/commn_wght"
+                android:textSize="6pt"
+                android:letterSpacing="0.05"
+                android:id="@+id/market_cap_text"
+                android:text="@string/market_cap"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="$ 3434344"
+                android:id="@+id/market_cap_value"
+                android:layout_weight="1"
+                android:textSize="@dimen/commn_font_detail_big"
+                android:letterSpacing="0.05"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="@dimen/commn_wght"
+                android:textSize="6pt"
+                android:letterSpacing="0.05"
+                android:id="@+id/volume_24_text"
+                android:text="@string/volume_24_hour"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="$ 134344"
+                android:id="@+id/volume_24_value"
+                android:layout_weight="1"
+                android:letterSpacing="0.05"
+                android:textSize="@dimen/commn_font_detail_big"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="@dimen/commn_wght"
+                android:letterSpacing="0.05"
+                android:textSize="6pt"
+                android:id="@+id/supply_text"
+                android:text="@string/supply"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="$ 63535"
+                android:letterSpacing="0.05"
+                android:id="@+id/supply_value"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:textSize="@dimen/commn_font_detail_big"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

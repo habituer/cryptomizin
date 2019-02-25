@@ -11,11 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="in.habituer.crypto.MainActivity">
-        </activity>
-        <activity android:name="in.habituer.crypto.SplashActivity">
+        <activity android:name=".CoinDetailViewActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
