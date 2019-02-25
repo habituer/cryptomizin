@@ -32,6 +32,8 @@ class CoinDetailViewActivity : AppCompatActivity() {
             }
         }
 
+        coin_rank_detail.text = c.rank!!.appendStart("# ")
+
         volume_24_value.text = createCurrency(c.volume_inr_24hr!!).toIndianRupeeWithUnit()
         market_cap_value.text = createCurrency(c.market_cap_inr!!).toIndianRupeeWithUnit()
         supply_value.text = createCurrency(c.available_supply!!).toIndianRupeeWithUnit()
@@ -51,6 +53,7 @@ class CoinDetailViewActivity : AppCompatActivity() {
         coin_symbol_detail.typeface = t
         price_24hour_detail.typeface = t
         price_inr_detail.typeface = t
+        coin_rank_detail.typeface = t
 
 
         volume_24_text.typeface = t

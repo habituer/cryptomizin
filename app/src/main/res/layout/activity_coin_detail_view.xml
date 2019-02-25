@@ -13,7 +13,10 @@
         android:id="@+id/coin_full_name_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
         android:gravity="top"
         android:letterSpacing="0.1"
         android:paddingTop="10dp"
@@ -24,11 +27,27 @@
         android:textStyle="bold" />
 
 
+
+    <TextView
+        android:id="@+id/coin_rank_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:letterSpacing="0.1"
+        android:text="# 1"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="7.5pt"
+        android:textStyle="bold" />
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="15dp">
 
 
